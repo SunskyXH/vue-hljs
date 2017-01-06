@@ -1,0 +1,38 @@
+{
+  "name": "vue-hljs",
+  "version": "0.0.1",
+  "description": "Highlight.js plugin for Vue.js 2.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunskyxh/vue-hljs.git"
+  },
+  "keywords": [
+    "highlight",
+    "hljs",
+    "vue"
+  ],
+  "author": {
+    "name": "SunskyXH",
+    "email": "SunskyXH@gmail.com",
+    "url": "http://www.sunskyxh.top:8000"
+  },
+  "maintainers": [
+    {
+      "name": "SunskyXH",
+      "email": "SunskyXH@gmail.com",
+      "url": "http://www.sunskyxh.top:8000"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "highlight.js": "^9.7.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sunskyxh/vue-hljs/issues"
+  },
+  "homepage": "https://github.com/sunskyxh/vue-hljs#readme"
+}
