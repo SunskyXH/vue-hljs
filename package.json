@@ -1,6 +1,6 @@
 {
   "name": "vue-hljs",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Highlight.js plugin for Vue.js 2.0",
   "main": "src/index.js",
   "scripts": {
