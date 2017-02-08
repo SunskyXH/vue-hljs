@@ -1,4 +1,5 @@
-const Hljs = require('highlight.js')
+import Hljs from 'highlight.js'
+import 'highlight.js/styles/gruvbox-dark.css'
 
 var vueHljs = {}
 

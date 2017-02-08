@@ -1,10 +1,10 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (factory());
-}(this, (function () { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('highlight.js'), require('highlight.js/styles/gruvbox-dark.css')) :
+  typeof define === 'function' && define.amd ? define(['highlight.js', 'highlight.js/styles/gruvbox-dark.css'], factory) :
+  (factory(global.Hljs,global.highlight_js_styles_gruvboxDark_css));
+}(this, (function (Hljs,highlight_js_styles_gruvboxDark_css) { 'use strict';
 
-var Hljs = require('highlight.js');
+Hljs = 'default' in Hljs ? Hljs['default'] : Hljs;
 
 var vueHljs = {};
 

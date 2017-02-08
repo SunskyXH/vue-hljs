@@ -31,7 +31,7 @@ Vue.use(vueHljs)
 ```html
 <div v-highlight>
   <pre>
-    <code>...</code>
+    <code class="you can specify the language here">...</code>
   </pre>
 </div>
 ```
