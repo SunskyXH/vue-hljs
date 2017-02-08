@@ -18,11 +18,11 @@ npm install vue-hljs --save
 ```javascript
 //es6
 import Vue from 'vue',
-import vueHljs from 'vue-hljs'
+import vueHljs from 'vue-hljs/dist/vue-hljs.min'
 
 //CommonJS
 const Vue = require('vue')
-const vueHljs = require('vue-hljs')
+const vueHljs = require('vue-hljs/dist/vue-hljs.min')
 
 //use
 Vue.use(vueHljs)
