@@ -1,4 +1,4 @@
-import Hljs from 'highlight.js'
+const Hljs = require('highlight.js')
 
 var vueHljs = {}
 
