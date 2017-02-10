@@ -4,12 +4,9 @@ import 'highlight.js/styles/gruvbox-dark.css'
 var vueHljs = {}
 
 vueHljs.install = function (Vue) {
-  Vue.directive('highlight', {
-    deep: true,
-    bind: function (el) {
-      let blocks = el.querySelectorAll('pre code')
-      Array.prototype.forEach.call(blocks, Hljs.highlightBlock)
-    }
+  Vue.directive('highlight', function (el, binding) {
+    let blocks = el.querySelectorAll('pre code')
+    Array.prototype.forEach.call(blocks, Hljs.highlightBlock)
   })
 }
 
