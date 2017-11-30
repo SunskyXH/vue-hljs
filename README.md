@@ -1,5 +1,5 @@
-[![GitHub issues](https://img.shields.io/github/issues/sunskyxh/vue-hljs.svg?style=flat-square)](https://github.com/sunskyxh/vue-hljs/issues)
-[![GitHub forks](https://img.shields.io/github/forks/sunskyxh/vue-hljs.svg?style=flat-square)](https://github.com/sunskyxh/vue-hljs/network)
+[![Build Status](https://travis-ci.org/SunskyXH/vue-hljs.svg?branch=master)](https://travis-ci.org/SunskyXH/vue-hljs)
+[![Coverage Status](https://coveralls.io/repos/github/SunskyXH/vue-hljs/badge.svg?branch=master)](https://coveralls.io/github/SunskyXH/vue-hljs?branch=master)
 [![GitHub stars](https://img.shields.io/github/stars/sunskyxh/vue-hljs.svg?style=flat-square)](https://github.com/sunskyxh/vue-hljs/stargazers)
 [![MITLicence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)
 
