@@ -1,17 +1,18 @@
 {
   "name": "vue-hljs",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "Highlight.js plugin for Vue.js 2.0",
-  "main": "src/index.js",
+  "module": "dist/vue-hljs.js",
+  "main": "dist/vue-hljs.js",
   "scripts": {
-    "build": "node build/build.js",
-    "test": "ava"
+    "build": "rollup -c",
+    "test": "ava",
+    "clean": "rm -rf dist/"
   },
   "ava": {
     "files": [
       "test/test.js"
     ]
-
   },
   "repository": {
     "type": "git",
@@ -25,13 +26,13 @@
   "author": {
     "name": "SunskyXH",
     "email": "SunskyXH@gmail.com",
-    "url": "http://www.sunskyxh.top:8000"
+    "url": "https://sunskyxh.github.io/"
   },
   "maintainers": [
     {
       "name": "SunskyXH",
       "email": "SunskyXH@gmail.com",
-      "url": "http://www.sunskyxh.top:8000"
+      "url": "https://sunskyxh.github.io/"
     }
   ],
   "license": "MIT",
@@ -45,12 +46,11 @@
     "babel-preset-es2015-loose": "^8.0.0",
     "babel-preset-es2015-loose-rollup": "^7.0.0",
     "babelrc-rollup": "^3.0.0",
-    "eslint": "^3.11.1",
-    "eslint-config-vue": "^2.0.1",
-    "eslint-plugin-vue": "^1.0.0",
-    "rollup": "^0.36.4",
+    "rollup": "^0.52.0",
     "rollup-plugin-babel": "^2.6.1",
-    "uglify-js": "^2.7.5",
+    "rollup-plugin-css-only": "^0.2.0",
+    "rollup-plugin-css-porter": "^0.1.2",
+    "rollup-plugin-uglify": "^2.0.1",
     "vue": "^2.1.10"
   },
   "bugs": {

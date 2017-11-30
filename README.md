@@ -6,7 +6,7 @@
 
 [![NPM](https://nodei.co/npm/vue-hljs.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vue-hljs/)
 
-#Use
+# vue-hljs
 
 ### Install
 
@@ -14,15 +14,19 @@
 npm install vue-hljs --save
 ```
 
-### use
+### Useage
 ```javascript
 //es6
-import Vue from 'vue',
-import vueHljs from 'vue-hljs/dist/vue-hljs.min'
+import Vue from "vue";
+import vueHljs from "vue-hljs";
+//if you want to use default color, import this css file
+import "vue-hljs/dist/vue-hljs.css";
 
 //CommonJS
-const Vue = require('vue')
-const vueHljs = require('vue-hljs/dist/vue-hljs.min')
+const Vue = require("vue");
+const vueHljs = require("vue-hljs");
+//if you want to use default color, import this css file
+require("vue-hljs/dist/vue-hljs.css");
 
 //use
 Vue.use(vueHljs)
@@ -35,3 +39,9 @@ Vue.use(vueHljs)
   </pre>
 </div>
 ```
+### Use your own style
+
+This plugin use gruvbox-dark as default style.
+
+You can wirte your own style or see [highlight.js demo](https://highlightjs.org/static/demo/).
+And then import your css file in Vue project entry.
