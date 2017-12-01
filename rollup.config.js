@@ -9,7 +9,7 @@ export default {
     format: "cjs"
   },
   plugins: [
-    css({dest: "dist/vue-hljs.css"}),
+    css({dest: "dist/vue-hljs.min.css", minified: false}),
     uglify({}),
     babel({
       presets: ["es2015-loose-rollup"],

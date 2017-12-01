@@ -1,5 +1,5 @@
 import Hljs from "highlight.js";
-import "./gruvbox-dark.css";
+import "./gruvbox-dark.min.css";
 
 var vueHljs = {};
 
