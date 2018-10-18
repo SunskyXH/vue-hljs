@@ -17,17 +17,10 @@ npm install vue-hljs --save
 
 ### Useage
 ```javascript
-//es6
 import Vue from "vue";
 import vueHljs from "vue-hljs";
 //if you want to use default color, import this css file
 import "vue-hljs/dist/vue-hljs.min.css";
-
-//CommonJS
-const Vue = require("vue");
-const vueHljs = require("vue-hljs");
-//if you want to use default color, import this css file
-require("vue-hljs/dist/vue-hljs.css");
 
 //use
 Vue.use(vueHljs)

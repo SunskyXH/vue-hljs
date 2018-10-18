@@ -1,17 +1,24 @@
-import test from "ava";
-import vueHljs from "../dist/vue-hljs";
-import Vue from "vue";
+import test from 'ava'
+import vueHljs from '../dist/vue-hljs'
+import Vue from 'vue'
 
-test("vueHljs is Object", t => {
-  t.is("object", typeof vueHljs);
-});
+// setup
+Vue.use(vueHljs)
+const testComponent = Vue.component('test-component', {
+  template: `<div v-highlight>
+  <pre>
+    <code class="javascript">console.log('Hello World!')</code>
+  </pre>
+</div>
+  `
+})
+const a = new Vue(testComponent)
 
-test("vueHljs.install is function", t => {
-  t.true(vueHljs.install instanceof Function);
-});
+// test case
+test('vueHljs.install is function', t => {
+  t.true(vueHljs.install instanceof Function)
+})
 
-test("Vue.use(vueHljs) excute successfully", t => {
-  Vue.use(vueHljs);
-  const _ = Vue.directive("highlight");
-  t.true(_.bind instanceof Function && _.update instanceof Function);
-});
+test('component has highlight directive', t => {
+  t.true('highlight' in a.$options.directives )
+}) 
