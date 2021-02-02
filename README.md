@@ -14,16 +14,22 @@
 ```bash
 npm install vue-hljs --save
 ```
+or
+```bash
+yarn add vue-hljs
+```
+
 
 ### Useage
 ```javascript
 import Vue from "vue";
 import vueHljs from "vue-hljs";
+import hljs from "highlight.js";
 //if you want to use default color, import this css file
-import "vue-hljs/dist/vue-hljs.min.css";
+import "vue-hljs/dist/style.css";
 
 //use
-Vue.use(vueHljs)
+Vue.use(vueHljs, { hljs })
 ```
 
 ```html
