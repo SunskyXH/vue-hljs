@@ -1,6 +1,8 @@
 const path = require('path')
 
-module.exports = {
+import { defineConfig } from 'vite'
+
+export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'lib/main.ts'),
@@ -19,4 +21,4 @@ module.exports = {
       },
     },
   },
-}
+})
