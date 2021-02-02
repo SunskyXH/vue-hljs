@@ -20,7 +20,7 @@ yarn add vue-hljs
 ```
 
 
-### Useage
+### Usage
 ```javascript
 import Vue from "vue";
 import vueHljs from "vue-hljs";
