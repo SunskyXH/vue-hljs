@@ -1,1 +1,0 @@
-"use strict";function _interopDefault(e){return e&&"object"==typeof e&&"default"in e?e.default:e}var Hljs=_interopDefault(require("highlight.js")),vueHljs={install:function(e){e.directive("highlight",function(e){var t=e.querySelectorAll("pre code");Array.prototype.forEach.call(t,Hljs.highlightBlock)})}};module.exports=vueHljs;
