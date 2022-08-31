@@ -1,18 +1,19 @@
-import { PluginObject } from 'vue'
+import type { App, Plugin } from 'vue'
+import type HLJSApi from 'highlight.js'
 import './gruvbox-dark.min.css'
 
 interface Options {
   hljs: HLJSApi
 }
 
-const vueHljs: PluginObject<Options> = {
-  install: (Vue, options) => {
+const plugin: Plugin = {
+  install: (app: App, options: Options) => {
     const { hljs } = options
-    Vue.directive('highlight', (el) => {
+    app.directive('highlight', (el) => {
       const blocks = el.querySelectorAll('pre code')
-      Array.prototype.forEach.call(blocks, hljs.highlightBlock)
+      blocks.forEach(hljs.highlightBlock)
     })
   },
 }
 
-export default vueHljs
+export default plugin

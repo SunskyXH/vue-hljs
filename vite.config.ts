@@ -1,6 +1,6 @@
 const path = require('path')
 
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 
 export default defineConfig({
   build: {
@@ -19,6 +19,12 @@ export default defineConfig({
           vue: 'Vue',
         },
       },
+    },
+  },
+  test: {
+    coverage: {
+      provider: 'c8',
+      reporter: ['text', 'json', 'html'],
     },
   },
 })
