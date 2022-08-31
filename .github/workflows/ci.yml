@@ -28,5 +28,7 @@ jobs:
         cache: 'npm'
     - name: Install dependencies
       run: yarn --frozen-lockfile
-    - run: yarn build --if-present
-    - run: yarn test
+    - name: Build source code
+      run: yarn build
+    - name: Run test
+      run: yarn test
