@@ -1,7 +1,7 @@
 {
   "name": "vue-hljs",
-  "version": "3.0.0",
-  "description": "Highlight.js plugin for Vue.js 2.0",
+  "version": "3.0.1",
+  "description": "Highlight.js plugin for Vue.js 3.0",
   "main": "./dist/vue-hljs.umd.js",
   "module": "./dist/vue-hljs.es.js",
   "exports": {
@@ -13,7 +13,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
     "test": "vitest --run",
     "coverage": "vitest run --coverage",
     "clean": "rm -rf dist/"
@@ -41,12 +40,12 @@
   ],
   "license": "BSD-3",
   "devDependencies": {
-    "@vitest/coverage-c8": "^0.22.1",
-    "highlight.js": "^10.5.0",
-    "typescript": "^4.8.2",
-    "vite": "^3.0.9",
-    "vitest": "^0.22.1",
-    "vue": "^3.2.38"
+    "@vitest/coverage-c8": "^0.27.0",
+    "highlight.js": "^11.7.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "vitest": "^0.27.0",
+    "vue": "^3.2.45"
   },
   "peerDependencies": {
     "highlight.js": "^10.0.0",

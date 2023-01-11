@@ -1,5 +1,5 @@
 import type { App, Plugin } from 'vue'
-import type HLJSApi from 'highlight.js'
+import type { HLJSApi } from 'highlight.js'
 import './gruvbox-dark.min.css'
 
 interface Options {
