@@ -41,7 +41,7 @@ app.use(vueHljs, { hljs })
 
 This plugin use gruvbox-dark as default style.
 
-You can wirte your own style or see [highlight.js demo](https://highlightjs.org/static/demo/).
+You can write your own style or see [highlight.js demo](https://highlightjs.org/static/demo/).
 And then import your css file in Vue project entry.
 
 ## Other similar project
