@@ -1,4 +1,4 @@
-import { describe, it } from 'vitest'
+import { describe, it, expect } from 'vitest'
 import hljs from 'highlight.js'
 import plugin from '../dist/vue-hljs.umd'
 import { createApp } from 'vue'
@@ -18,10 +18,10 @@ app.use(plugin, { hljs })
 // test case
 describe.concurrent('setup', () => {
   it('vueHljs.install is function', (t) => {
-    return plugin.install instanceof Function
+    expect(plugin.install).toBeInstanceOf(Function)
   })
 
   it('app instance has highlight directive', (t) => {
-    return 'highlight' in app.directive
+    expect(app.directive('highlight')).toBeTruthy()
   })
 })
