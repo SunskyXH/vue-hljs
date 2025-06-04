@@ -1,1 +1,0 @@
-(function(e,i){typeof exports=="object"&&typeof module<"u"?module.exports=i():typeof define=="function"&&define.amd?define(i):(e=typeof globalThis<"u"?globalThis:e||self,e["vue-hljs"]=i())})(this,function(){"use strict";const e="";return{install:(n,o)=>{const{hljs:t}=o;n.directive("highlight",l=>{l.querySelectorAll("pre code").forEach(t.highlightBlock)})}}});
