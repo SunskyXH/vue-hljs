@@ -22,6 +22,6 @@ describe.concurrent('setup', () => {
   })
 
   it('app instance has highlight directive', (t) => {
-    expect(app.directive('highlight')).toBeTruthy()
+    expect(app.directive('highlight')).toBeDefined()
   })
 })
