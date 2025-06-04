@@ -44,6 +44,6 @@ This plugin use gruvbox-dark as default style.
 You can write your own style or see [highlight.js demo](https://highlightjs.org/static/demo/).
 And then import your css file in Vue project entry.
 
-## Other similar project
+## Other similar projects
 
 - [highlightjs/vue-plugin](https://github.com/highlightjs/vue-plugin): Highlight.js official plugin.
