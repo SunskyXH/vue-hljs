@@ -1,12 +1,15 @@
-const path = require('path')
+import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import { defineConfig } from 'vite'
+import dts from 'unplugin-dts/vite'
 
-import { defineConfig } from 'vitest/config'
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'lib/main.ts'),
-      name: 'vue-hljs',
+      entry: resolve(__dirname, 'lib/main.ts'),
+      name: 'vue-hljs'
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled
@@ -19,12 +22,13 @@ export default defineConfig({
           vue: 'Vue',
         },
       },
+      plugins: [dts()],
     },
   },
   test: {
+    environment: 'jsdom',
     coverage: {
-      provider: 'c8',
-      reporter: ['text', 'json', 'html'],
+      provider: 'v8',
     },
   },
 })

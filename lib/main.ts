@@ -1,18 +1,26 @@
-import type { App, Plugin } from 'vue'
+import type { App, Plugin, FunctionDirective } from 'vue'
 import type { HLJSApi } from 'highlight.js'
-import './gruvbox-dark.min.css'
 
-interface Options {
+type Options = {
   hljs: HLJSApi
 }
 
-const plugin: Plugin = {
-  install: (app: App, options: Options) => {
+const plugin: Plugin<Options> = {
+  install: (app, options) => {
+    if (!('hljs' in options)) {
+      throw Error('Please pass highlight.js instance.')
+    }
     const { hljs } = options
-    app.directive('highlight', (el) => {
+    
+    const highlightDirective: FunctionDirective = (el) => {
+      if (!el) {
+        throw new Error('Element is required')
+      }
       const blocks = el.querySelectorAll('pre code')
       blocks.forEach(hljs.highlightBlock)
-    })
+    }
+    
+    app.directive('highlight', highlightDirective)
   },
 }
 
