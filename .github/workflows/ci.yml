@@ -16,20 +16,22 @@ jobs:
 
     strategy:
       matrix:
-        # Use the latest active LTS version of Node.js
         node-version: ["lts/*"]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
+    - name: Install pnpm
+      uses: pnpm/action-setup@v4
+      with:
+        version: 10
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+        cache: 'pnpm'
     - name: Install dependencies
-      run: yarn --frozen-lockfile
+      run: pnpm install
     - name: Build source code
-      run: yarn build
+      run: pnpm build
     - name: Run test
-      run: yarn test
+      run: pnpm test
